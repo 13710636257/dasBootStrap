@@ -1,0 +1,301 @@
+/*字体图标*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+.head-nav{
+	background: black;
+	height: 65px;
+}
+.head-nav .head-logo {
+	height: 100%;
+}
+
+.head-nav .head-logo .logo{
+	height: 100%;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.head-nav .menu-1 {
+	height: 100%;
+	/*background: red;*/
+}
+
+.head-nav .menu-1 li{
+	padding: 8px 30px 6px 30px;
+}
+.head-nav .menu-1 li:hover{
+	background: #009de7;
+}
+.head-nav .menu-1 li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-size: 16px;
+}
+.head-nav .menu-1 li a:hover{
+	background: transparent;
+}
+
+.head-nav .menu-1 li .dropdown-menu a{
+	color:black
+}
+
+
+@media (max-width: 768px) {
+  .head-nav .menu-1 {
+    display: none;
+  }
+  .head-nav .head-logo .logo{
+		text-align: left;
+}
+
+}
+
+/*轮播图*/
+.lunbo-box .lunbo-pic{
+	width: 100%;
+	height: 415px;
+}
+
+.lunbo-box .lunbo-pic .item img{
+	width: 100%;
+	height: 415px;
+}
+
+.lunbo-box .carousel-control{
+	width: 60px;
+	height: 60px;
+	color: black;
+	font-size: 38px;
+	background:gainsboro;
+	border-radius: 50%;
+	
+}
+
+.lunbo-box .lt{
+	position: absolute;
+	top:135px;
+	left: 30px;
+}
+.lunbo-box .rt{
+	position: absolute;
+	top:135px;
+	right: 30px;
+}
+/*搜索*/
+.schbgd {
+	background: white;
+}
+.sch-title{
+	padding: 15px 0px;
+}
+
+.search-box form .schform .inp{
+	width: 93%;
+	height: 52px;
+	font-size: 18px;
+	border-radius: 0;
+	margin-left: 44px;
+}
+
+/*搜索按钮*/
+.search-box form .btn{
+	display: inline-block;
+	text-align: center;
+	width: 64px;
+	height: 52px;
+	line-height: 48px;
+	font-size: 24px;
+  background: #0097de;
+  border: none;
+  color: white;
+  border-radius: 0;
+}
+.check-btn {
+	padding: 20px 0px 15px 0px;
+}
+.check-btn form .srcbtn .btn{
+		width: 148px;
+		height: 48px;
+		background: #0097de;
+		color: white;
+		font-size: 18px;
+}
+
+
+
+
+/*背景图*/
+.bnner {
+	padding-top: 68px;
+		background: url(../img/home/hintergrund.jpg) no-repeat center center fixed;
+		background-size: cover;
+    background-position: top center;
+}
+
+/*大背景图的内容*/
+.project-item {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: #fff;
+  
+    overflow: hidden;
+    z-index: 9;
+    bottom: 0;
+    margin-bottom: 30px;
+    border: 1px solid #e6e6e6;
+    
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.project-item figure {
+    height: 195px;
+    border-bottom: 1px solid gainsboro;
+    overflow: hidden;
+    z-index: 12;
+    position: relative;
+}
+
+.project-item img {
+		width: 95%;
+		height: 95%;
+		text-align: center;
+    z-index: 8;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.project-item:hover img{
+		-webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.project-item figure .overlay {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.project-item figure .overlay i {
+    z-index: 99;
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -45px;
+    top: 65%;
+    left: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.project-item:hover figure .overlay{
+	 opacity: 1;
+	 visibility:visible;
+	
+}
+.project-item:hover{
+	text-decoration: none;
+	 -webkit-box-shadow: 0 0 8px 4px gainsboro;
+}
+.project-item .fh5co-text h3 {
+		font-size: 20px;
+		margin-top: 12px;
+		text-align: center;
+}
+.project-item .fh5co-text p {
+	height: 76px;
+	
+	padding: 0px 8px 15px 8px;
+	color: #606060;
+	font-size: 14px;
+	overflow: hidden;
+	 
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
+  text-overflow: ellipsis;
+}
+
+.check-more>div>h4{
+	text-align: center;
+}
+.check-more>div>h4>a{
+	display: inline-block; 
+	width: 125px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #009de7;
+	-webkit-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+}
+.check-more>div>h4>a:hover{
+	background: #e7e7e7;
+	color: red;
+}
+@media (max-width:768px) {
+	.check-more>div>h4{
+		font-size: 16px;
+	}
+	
+}
+
+.foot {
+	background: #ebebeb;
+  padding-top: 45px;
+}
+
+.footer-title ul {
+		padding: 0;
+    margin: 0 0 20px 0;
+    float: left;
+    width: 100%
+}
+
+.footer-title ul li{
+		padding: 0;
+    margin: 0 0 15px 0;
+    list-style: none;
+    line-height: 1;
+}
+.footer-title h4{
+		font-size: 20px;
+    color: #676767;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.footer-title ul li a {
+		font-size: 16px;
+    color: #676767;
+}
+.foot .copy {
+	height: 65px;
+}

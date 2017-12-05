@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>得实</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+
+		<style type="text/css">
+			/*媒体查询*/
+			/** 超小设备（手机，小于 768px） *!/*/
+			/*/!* Bootstrap 中默认情况下没有媒体查询 *!/*/
+			/*/!* 小型设备（平板电脑，768px 起） *!/*/
+			/*@media (min-width: @screen-sm-min) { ... }*/
+			/*/!* 中型设备（台式电脑，992px 起） *!/*/
+			/*@media (min-width: @screen-md-min) { ... }*/
+			/*/!* 大型设备（大台式电脑，1200px 起） *!/*/
+			/*@media (min-width: @screen-lg-min) { ... }*/
+			/*单独使用*/
+			
+			@media (min-width: 1300px) {
+				body {
+					background: #f7f7f7;
+				}
+			}
+			/*max-width:最大宽度       min-width 最小宽度*/
+			/*混合使用*/
+			
+			@media screen and (min-width:960px) and (max-width:1200px) {
+				body {
+					background: yellow;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--头部导航-->
+		<nav class="" role="navigation">
+			<div class="container-fluid">
+				<div class="row head-nav">
+					<div class="col-sm-4 col-xs-12 head-logo">
+						<div class="logo"><img src="../img/ds-log3.png"></div>
+					</div>
+
+					<div class="col-xs-8 text-right menu-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="">首页</a>
+							</li>
+							<li>
+								<a href="">产品</a>
+							</li>
+							<li class="dropdown">
+								<!--在导航栏内的下拉菜单的用法-->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									应用与解决方案
+									<b class="caret"></b>
+									<!--向下箭头-->
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">jmeter</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+									<li>
+										<a href="#">Jasper Report</a>
+									</li>
+
+									<li>
+										<a href="#">分离的链接</a>
+									</li>
+
+									<li>
+										<a href="#">另一个分离的链接</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown">
+								<!--在标签页内的下拉菜单的用法：-->
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">论坛
+									<span class="caret"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dLabel">
+									<li>
+										<a href="#">Swing</a>
+									</li> 
+									<li class="disabled">
+										<a href="#">jMeter</a>
+									</li>
+									<li>
+										<a href="#">EJB</a>
+									</li>
+									<li>
+										<a href="#">分离的链接</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+							<li>
+								<a href="#">登录</a>
+							</li>
+							<li>
+								<a href="#">注册</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+		<!--轮播图-->
+		<div class="row">
+			<div id="myCarousel" class="carousel slide lunbo-box">
+				<ol class="carousel-indicators">
+					<!--小圆点-->
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!--Carousel items-->
+				<div class="carousel-inner lunbo-pic">
+					<div class="active item">
+						<img src="../img/home/home-bn.jpg" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="../img/home/banner3.jpg" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="../img/home/banner8.jpg" alt="Third slide">
+					</div>
+				</div>
+				<!--Carousel nav-->
+				<a class="carousel-control left lt" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right rt" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+
+		<!--搜索-->
+		<div class="schbgd">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-12 col-md-12 col-sm-12 sch-title">
+						<h2>我们随时提供服务</h2>
+					</div>
+				</div>
+
+				<div class="row search-box">
+					<div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+						<form class="form-inline" role="form">
+							<div class="col-md-8 col-sm-11 col-xs-10" style="padding: 0px;">
+								<div class="schform">
+									<input type="text" class="form-control inp" id="name" placeholder="请输入名称">
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-1 col-xs-1" style="padding: 0px;">
+								<button type="submit" class="btn btn-default">
+								 <span class="glyphicon glyphicon-search"></span>
+							</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row text-center check-btn">
+					<form class="" role="form">
+						<div class="form-group srcbtn">
+							<button type="submit" class="btn btn-default">立即检测</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<!--大屏幕-->
+		<div class="jumbotron bnner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<a href="../img/bn1.png" class="project-item image-popup">
+							<figure>
+								<div class="overlay"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></div>
+								<img src="../img/bn1.png" alt="Image" class="img-circle">
+							</figure>
+							<div class="fh5co-text">
+								<h3>标签打印机</h3>
+								<p>用途广泛 性价比高，特别适合制造业、商业、服务业、税务、零售行业票据打印..</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<a href="../img/bn2.png" class="project-item image-popup">
+							<figure>
+								<div class="overlay"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></div>
+								<img src="../img/bn2.png" alt="Image" class="img-responsive">
+							</figure>
+							<div class="fh5co-text">
+								<h3>证卡打印机</h3>
+								<p>用途广泛 性价比高，特别适合制造业、商业、服务业、税务、零售行业票据打印..</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<a href="../img/bn2.png" class="project-item image-popup">
+							<figure>
+								<div class="overlay"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></div>
+								<img src="../img/bn2.png" alt="Image" class="img-responsive">
+							</figure>
+							<div class="fh5co-text">
+								<h3>针式打印机</h3>
+								<p>用途广泛 性价比高，特别适合制造业、商业、服务业、税务、零售行业票据打印..</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<a href="../img/bn1.png" class="project-item image-popup">
+							<figure>
+								<div class="overlay"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></div>
+								<img src="../img/bn1.png" alt="Image" class="img-responsive">
+							</figure>
+							<div class="fh5co-text">
+								<h3>报表打印机</h3>
+								<p>用途广泛 性价比高，特别适合制造业、商业、服务业、税务、零售行业票据打印...</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row check-more">
+					<div class="col-lg-12 col-md-12 col-sm-6" style="">
+						<h4><a href="">查看更多</a></h4>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="foot">
+			<!--<div class="container">-->
+				<div class="row">
+					<div class="col-md-2 col-xs-12 col-md-offset-2 footli">
+						<div class="footer-title">
+							<h4>产品系列</h4>
+							<ul class="footer-links">
+								<li><a href="#">借用系列</a></li>
+								<li><a href="#">商用系列</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 footli">
+						<div class="footer-title">
+							<h4>服务支持</h4>
+							<ul class="footer-links">
+								<li><a href="#">驱动、固件下载</a></li>
+								<li><a href="#">服务机构查询</a></li>
+								<li><a href="#">常见问题</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 footli">
+						<div class="footer-title">
+							<h4>购买指南</h4>
+							<ul class="footer-links">
+								<li><a href="#">经销商查询</a></li>
+								<li><a href="#">专卖店</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 footli">
+						<div class="footer-title">
+							<h4>关于得实</h4>
+							<ul class="footer-links">
+								<li><a href="#">公司简介</a></li>
+								<li><a href="#">新闻资讯</a></li>
+								<li><a href="#">中国业务网络</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 footli">
+						<div class="footer-title">
+							<h4>关联网站</h4>
+							<ul class="footer-links">
+								<li><a href="#">得实合作伙伴门户</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			<!--</div>-->
+			
+			<div class="copy" style="background: black;">
+				
+			</div>
+			
+		</footer>
+
+
+
+
+		<script src="../jquery-1-3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				//				轮播图参数
+				$('.carousel').carousel({
+						interval: 2000
+					})
+					//				鼠标进入时暂停轮播循环，鼠标离开时恢复轮播循环。
+				$(".pause-slide").click(function() {
+					$("#myCarousel").carousel('pause');
+				});
+
+				//				// 循环轮播到上一个项目
+				//				$(".left").click(function() {
+				//					$("#myCarousel").carousel('prev');
+				//				});
+				//				// 循环轮播到下一个项目
+				//				$(".right").click(function() {
+				//					$("#myCarousel").carousel('next');
+				//				});
+				//				// 循环轮播到某个特定的帧
+				//				$(".slide-one").click(function() {
+				//					$("#myCarousel").carousel(0);
+				//				});
+				//				$(".slide-two").click(function() {
+				//					$("#myCarousel").carousel(1);
+				//				});
+				//				$(".slide-three").click(function() {
+				//					$("#myCarousel").carousel(2);
+				//				});
+			})
+		</script>
+	</body>
+
+</html>
